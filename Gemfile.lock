@@ -1,0 +1,18 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    kramdown (1.2.0)
+    mime-types (1.25)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    rest-core (2.1.2)
+      rest-client
+    settingslogic (2.0.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  kramdown
+  rest-core
+  settingslogic

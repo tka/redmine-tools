@@ -1,0 +1,4 @@
+host: http://example.com
+project_id: 123
+api_access_key: 12345abcdef
+
