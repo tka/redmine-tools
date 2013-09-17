@@ -16,6 +16,6 @@ RedmineClient = RC::Builder.client do
 end
 
 client=RedmineClient.new
-client.get('projects.json')["projects"].sort_by{|x|x["id"]}.each{|x|
+client.get('/projects.json')["projects"].sort_by{|x|x["id"]}.each{|x|
   printf("% 4d %s\n", x["id"], x["name"])
 }
