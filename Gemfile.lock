@@ -1,18 +1,26 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    coderay (1.0.9)
     kramdown (1.2.0)
+    method_source (0.8.2)
     mime-types (1.25)
+    pry (0.9.12.2)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rest-core (2.1.2)
       rest-client
     settingslogic (2.0.9)
+    slop (3.4.6)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   kramdown
+  pry
   rest-core
   settingslogic
