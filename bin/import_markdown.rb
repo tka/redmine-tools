@@ -1,5 +1,6 @@
 #!/bin/env ruby
 
+
 require 'bundler'
 Bundler.setup
 require 'pry'
@@ -17,6 +18,8 @@ doc = Kramdown::Document.new(source)
 issues= doc.to_issues
 puts "="*80
 issues.select{|x| x.parent == nil }.each do |issue|
+  issue.save_to_redmine
   puts issue.to_s
-  puts
 end 
+
+
